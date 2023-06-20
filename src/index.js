@@ -71,6 +71,7 @@ async function loadCatByBreed(breedId) {
       
     `;
   } catch (err) {
+    catInfo.innerHTML = '';
     showError();
   } finally {
     hideLoader();
